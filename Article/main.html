@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="start" class="header">
+        <div class="container header-container flex">
+            <a href="#" class="header-logo">
+                <img src="img/javascript_logo.png" class="header-logo" alt="JS logo">
+            </a>
+            <nav class="header-nav">
+                <ul class="list-reset header-list flex">
+                    <li class="header-list-item">
+                        <a href="#introduction" class="header-link">
+                            Введение
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#engines" class="header-link">
+                            «Движки» JavaScript
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#opportunities" class="header-link">
+                            Возможности языка
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#structure" class="header-link">
+                            Структура языка
+                        </a>
+                    </li>
+                    <li class="header-list-item">
+                        <a href="#conclusion" class="header-link">
+                            Заключение
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>JavaScript</h1>
+
+        <h2 id="introduction">Введение</h2>
+        <p>JavaScript&nbsp;&mdash; это язык программирования, который добавляет интерактивность на&nbsp;ваш веб-сайт
+            (например: игры, отклик
+            при нажатии кнопок или при вводе данных в&nbsp;формы, динамические стили, анимация). Эта статья поможет вам
+            начать
+            работать с&nbsp;этим захватывающим языком и&nbsp;даст вам представление о&nbsp;том, на&nbsp;что
+            он&nbsp;способен.</p>
+
+        <h2>Что такое JavaScript?</h2>
+        <img class="img1" src="img/cake.png" alt="Cake">
+        <p>JavaScript&nbsp;&mdash; это язык, который позволяет вам применять сложные вещи на&nbsp;web-странице каждый
+            раз, когда на&nbsp;web-
+            странице происходит что-то большее, чем просто её&nbsp;статичное отображение&nbsp;&mdash; отображение
+            периодически обновляемого
+            контента, или интерактивных карт, или анимация 2D/3D&nbsp;графики, или прокрутка видео в&nbsp;проигрывателе
+            и&nbsp;т.д. &mdash;
+            можете быть уверены, что скорее всего, не&nbsp;обошлось без JavaScript.</p>
+        <p>Это третий слой слоёного пирога стандартных
+            web-технологий, два из&nbsp;которых (<a target="_blank" href="https://ru.wikipedia.org/wiki/HTML">HTML</a> и <a
+                href="https://ru.wikipedia.org/wiki/CSS">CSS</a>) мы&nbsp;детально раскрыли в&nbsp;других частях
+            учебного пособия.</p>
+        <ol>
+            <li>HTML&nbsp;&mdash; это язык разметки, который мы&nbsp;используем для визуального и&nbsp;смыслового
+                структурирования нашего web
+                контента, например, определяем параграфы, заголовки, таблицы данных, или вставляем изображения
+                и&nbsp;видео
+                на
+                страницу.</li>
+            <li>CSS&nbsp;&mdash; это язык стилей с&nbsp;помощью которого мы&nbsp;придаём стиль отображения нашего
+                HTML&nbsp;контента, например
+                придаём
+                цвет фону (background) и&nbsp;шрифту, придаём контенту многоколоночный вид.</li>
+            <li>JavaScript язык программирования, который позволяет вам создать динамически обновляемый контент,
+                управляет
+                мультимедиа, анимирует изображения, впрочем, делает всё, что угодно. Окей, не&nbsp;все, что угодно,
+                но&nbsp;всё
+                равно,
+                это удивительно, что можно достичь с&nbsp;помощью нескольких строк JavaScript-кода.</li>
+        </ol>
+
+        <h2 id="engines">&laquo;Движки&raquo; JavaScript</h2>
+        <p>Сегодня JavaScript может выполняться не&nbsp;только в&nbsp;браузере, но&nbsp;и&nbsp;на&nbsp;сервере или
+            на&nbsp;любом другом устройстве,
+            которое имеет специальную программу, называющуюся<a target="_blank" 
+                href="https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%B8%D0%B6%D0%BE%D0%BA_JavaScript">&laquo;движком&raquo;
+                JavaScript</a>.</p>
+        <p>У&nbsp;браузера есть собственный движок, который иногда называют &laquo;виртуальная машина JavaScript&raquo;.
+        </p>
+        <p>Разные движки имеют разные &laquo;кодовые имена&raquo;. Например:</p>
+        <a target="_blank" href="https://ru.wikipedia.org/wiki/V8_(%D0%B4%D0%B2%D0%B8%D0%B6%D0%BE%D0%BA_JavaScript)"><img class="img2"
+                src="img/V8-logo.png" alt="Logo v8"></a>
+        <a target="_blank" href="https://ru.wikipedia.org/wiki/SpiderMonkey"><img class="img2" src="img/Spidermonkey-logo.png"
+                alt="Spidermonkey-logo"></a>
+        <ul>
+            <li><a target="_blank" href="https://ru.wikipedia.org/wiki/V8_(%D0%B4%D0%B2%D0%B8%D0%B6%D0%BE%D0%BA_JavaScript)">V8</a> – в
+                Chrome и Opera</li>
+            <li><a target="_blank" href="https://ru.wikipedia.org/wiki/SpiderMonkey">SpiderMonkey</a> – в Firefox.</li>
+            <li>ещё есть &laquo;Trident&raquo; и&nbsp;&laquo;Chakra&raquo; для разных версий IE,
+                &laquo;ChakraCore&raquo; для Microsoft Edge, &laquo;Nitro&raquo; и
+                &laquo;SquirrelFish&raquo; для Safari и&nbsp;т.д.</li>
+        </ul>
+        <p>Эти названия полезно знать, так как они часто используются в&nbsp;статьях для разработчиков. Мы&nbsp;тоже
+            будем их
+            использовать. Например, если &laquo;функциональность&nbsp;X поддерживается&nbsp;V8&raquo;, тогда
+            &laquo;Х&raquo;, скорее всего, работает в
+            Chrome
+            и&nbsp;Opera.</p>
+
+        <h2 id="opportunities">Возможности языка</h2>
+        <p>JavaScript является объектно-ориентированным языком, но&nbsp;используемое в&nbsp;языке прототипирование
+            обуславливает
+            отличия в&nbsp;работе с&nbsp;объектами по&nbsp;сравнению с&nbsp;традиционными класс-ориентированными
+            языками. Кроме того,
+            JavaScript
+            имеет ряд свойств, присущих функциональным языкам&nbsp;&mdash; функции как объекты первого класса, объекты
+            как списки,
+            карринг, анонимные функции, замыкания&nbsp;&mdash; что придаёт языку дополнительную гибкость.</p>
+        <p>Несмотря на&nbsp;схожий с&nbsp;Си синтаксис, JavaScript по&nbsp;сравнению с&nbsp;языком&nbsp;Си имеет
+            коренные отличия:</p>
+        <ul>
+            <li>объекты с&nbsp;возможностью интроспекции;</li>
+            <li>функции как объекты первого класса;</li>
+            <li>автоматическое приведение типов;</li>
+            <li>автоматическая сборка мусора;</li>
+            <li>анонимные функции.</li>
+        </ul>
+
+        <p>В&nbsp;языке отсутствуют такие полезные вещи, как:</p>
+        <ul>
+            <li>стандартная библиотека: в&nbsp;частности, отсутствует интерфейс программирования приложений
+                по&nbsp;работе с
+                файловой
+                системой, управлению потоками ввода-вывода, базовых типов для бинарных данных;</li>
+            <li>стандартные интерфейсы к&nbsp;веб-серверам и&nbsp;базам данных;</li>
+            <li>система управления пакетами, которая&nbsp;бы отслеживала зависимости и&nbsp;автоматически
+                устанавливала&nbsp;их.</li>
+        </ul>
+
+        <h2 id="structure">Структура языка</h2>
+        <p>Структурно JavaScript можно представить в&nbsp;виде объединения трёх чётко различимых друг от&nbsp;друга
+            частей:</p>
+        <ul>
+            <li>ядро (<a href="https://ru.wikipedia.org/wiki/ECMAScript">ECMAScript</a>);</li>
+            <li>объектная модель браузера ( <a target="_blank" href="https://www.w3schools.com/js/js_window.asp">Browser Object Model
+                    или BOM</a>);</li>
+            <li>объектная модель документа (<a target="_blank"
+                    href="https://ru.wikipedia.org/wiki/Document_Object_Modelhttps://ru.wikipedia.org/wiki/Document_Object_Model">Document
+                    Object Model или DOM</a>).</li>
+        </ul>
+
+        <p>Если рассматривать JavaScript в&nbsp;отличных от&nbsp;браузера окружениях, то&nbsp;объектная модель браузера
+            и&nbsp;объектная
+            модель
+            документа могут не&nbsp;поддерживаться.</p>
+        <p>Объектную модель документа иногда рассматривают как отдельную от&nbsp;JavaScript сущность, что согласуется с
+            определением DOM как независимого от&nbsp;языка интерфейса документа. В&nbsp;противоположность этому ряд
+            авторов
+            находит BOM и&nbsp;DOM тесно взаимосвязанными.</p>
+
+        <ul class="list-reset flex">
+            <li class="structure-item flex">
+                <h3>
+                    Ядро
+                </h3>
+                <p>
+                    ECMAScript не&nbsp;является браузерным языком и&nbsp;в&nbsp;нём не&nbsp;определяются методы ввода
+                    и&nbsp;вывода информации.
+                    Это, скорее,
+                    основа для построения скриптовых языков. Спецификация ECMAScript описывает типы данных, инструкции,
+                    ключевые и
+                    зарезервированные слова, операторы, объекты, регулярные выражения, не&nbsp;ограничивая авторов
+                    производных языков в
+                    расширении их&nbsp;новыми составляющими.</p>
+            </li>
+            <li class="structure-item flex">
+                <h3>
+                    Объектная модель браузера
+                </h3>
+                <p>
+                    Объектная модель браузера&nbsp;&mdash; браузер-специфичная часть языка, являющаяся прослойкой между ядром и
+объектной
+моделью документа. Основное предназначение объектной модели браузера&nbsp;&mdash; управление окнами браузера и
+обеспечение
+их&nbsp;взаимодействия. Каждое из&nbsp;окон браузера представляется объектом window, центральным объектом DOM.
+Объектная
+модель браузера на&nbsp;данный момент не&nbsp;стандартизирована, однако спецификация находится в&nbsp;разработке
+WHATWG и&nbsp;W3C.</p>
+            </li>
+            <li class="structure-item flex">
+                <h3>
+                    Объектная модель документа
+                </h3>
+                <p>
+                    Объектная модель документа&nbsp;&mdash; интерфейс программирования приложений для HTML и&nbsp;XML-документов.
+                    Согласно DOM,
+                    документ (например, веб-страница) может быть представлен в&nbsp;виде дерева объектов, обладающих рядом
+                    свойств,
+                    которые
+                    позволяют производить с&nbsp;ним различные манипуляции:
+                <ul>
+                    <li>генерация и&nbsp;добавление узлов,</li>
+                    <li>получение узлов,</li>
+                    <li>изменение узлов,</li>
+                    <li>изменение связей между узлами,</li>
+                    <li>удаление узлов.</li>
+                </ul>
+                </p>
+            </li>
+        </ul>
+
+        <h2 id="conclusion">Заключение</h2>
+        <p>Из&nbsp;этой статьи&nbsp;Вы смогли получить общее представление о&nbsp;JavaScript.</p>
+        <p>JavaScript невероятно универсален и&nbsp;дружелюбен к&nbsp;новичкам. Обладая большим опытом, вы&nbsp;сможете создавать игры,
+            анимированную 2D&nbsp;и&nbsp;3D&nbsp;графику, полномасштабные приложения с&nbsp;базами данных и&nbsp;многое другое!</p>
+        <p class="end">Желаем успехов в&nbsp;освоении JavaScript!</p>
+        <a href="#start">
+            <button class="btn">
+                В начало
+            </button>
+        </a>
+    </div>
+
+</body>
+
+</html>
